@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtx4p2n2l8a2d"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_v4t87"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ba0x2"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ba0x2"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nlgqw"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_507ja"]
+normal = Vector2(0, 1)
+
+[node name="Platform" type="StaticBody2D"]
+position = Vector2(578, 561)
+
+[node name="worldBoundaryFloor" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_v4t87")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+scale = Vector2(1200, 3)
+mesh = SubResource("BoxMesh_ba0x2")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(0, -563)
+scale = Vector2(1200, 3)
+mesh = SubResource("BoxMesh_ba0x2")
+
+[node name="worldBoundaryLeft" type="CollisionShape2D" parent="."]
+position = Vector2(-578, -177)
+shape = SubResource("WorldBoundaryShape2D_ba0x2")
+
+[node name="WorldBoundaryRight" type="CollisionShape2D" parent="."]
+position = Vector2(574, -177)
+shape = SubResource("WorldBoundaryShape2D_nlgqw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -561)
+shape = SubResource("WorldBoundaryShape2D_507ja")

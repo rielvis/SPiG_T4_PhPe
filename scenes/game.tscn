@@ -1,0 +1,88 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfdl6xl2rkr4t"]
+
+[ext_resource type="PackedScene" uid="uid://c88dbrqh7udi3" path="res://scenes/ball.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://dtx4p2n2l8a2d" path="res://scenes/platform.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://whydvnhyoeaw" path="res://scenes/box.tscn" id="3_lnu2h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
+size = Vector2(353, 123)
+
+[sub_resource type="SphereMesh" id="SphereMesh_lbhrr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lnu2h"]
+radius = 25.0799
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lbhrr"]
+radius = 294.027
+
+[node name="Game" type="Node2D"]
+
+[node name="Platform" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(575, 599)
+
+[node name="Balls" type="Node2D" parent="."]
+position = Vector2(0, 39)
+
+[node name="Ball" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(311, 157)
+
+[node name="Ball2" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(457, 104)
+
+[node name="Ball3" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(333, 65)
+
+[node name="Ball4" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(425, 40)
+
+[node name="Boxes" type="Node2D" parent="."]
+position = Vector2(0, 39)
+
+[node name="Box" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(461, 301)
+
+[node name="Box2" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(393, 367)
+
+[node name="Box3" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(258, 285)
+
+[node name="Box4" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(319, 435)
+
+[node name="Box5" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(401, 221)
+
+[node name="Box6" parent="Boxes" instance=ExtResource("3_lnu2h")]
+position = Vector2(565, 427)
+
+[node name="Gravity Areas" type="Node2D" parent="."]
+position = Vector2(-27, -3)
+
+[node name="Area2D" type="Area2D" parent="Gravity Areas"]
+position = Vector2(571, 532)
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Area2D"]
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="Planet" type="StaticBody2D" parent="Gravity Areas"]
+position = Vector2(974, 240)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Gravity Areas/Planet"]
+scale = Vector2(50, 50)
+mesh = SubResource("SphereMesh_lbhrr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Planet"]
+shape = SubResource("CircleShape2D_lnu2h")
+
+[node name="Area2D" type="Area2D" parent="Gravity Areas/Planet"]
+gravity_space_override = 3
+gravity_point = true
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Planet/Area2D"]
+shape = SubResource("CircleShape2D_lbhrr")
