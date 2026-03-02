@@ -35,6 +35,84 @@ position = Vector2(333, 65)
 [node name="Ball4" parent="Balls" instance=ExtResource("1_uwrxv")]
 position = Vector2(425, 40)
 
+[node name="Ball5" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(178, 96)
+
+[node name="Ball6" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(109, 192)
+
+[node name="Ball7" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(75, 102)
+
+[node name="Ball8" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(81, 297)
+
+[node name="Ball9" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(261, 173)
+
+[node name="Ball10" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(186, 205)
+
+[node name="Ball11" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(167, 295)
+
+[node name="Ball12" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(534, 164)
+
+[node name="Ball13" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(388, 104)
+
+[node name="Ball14" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(259, 50)
+
+[node name="Ball15" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(143, 26)
+
+[node name="Ball16" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(49, 182)
+
+[node name="Ball17" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(128, 360)
+
+[node name="Ball18" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(557, 79)
+
+[node name="Ball19" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(574, 283)
+
+[node name="Ball20" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(448, 214)
+
+[node name="Ball21" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(388, 289)
+
+[node name="Ball22" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(319, 261)
+
+[node name="Ball23" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(258, 316)
+
+[node name="Ball24" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(213, 363)
+
+[node name="Ball25" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(337, 359)
+
+[node name="Ball26" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(256, 228)
+
+[node name="Ball27" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(515, 361)
+
+[node name="Ball28" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(609, 192)
+
+[node name="Ball29" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(521, 233)
+
+[node name="Ball30" parent="Balls" instance=ExtResource("1_uwrxv")]
+position = Vector2(521, 233)
+
 [node name="Boxes" type="Node2D" parent="."]
 position = Vector2(0, 39)
 
@@ -60,12 +138,39 @@ position = Vector2(565, 427)
 position = Vector2(-27, -3)
 
 [node name="Area2D" type="Area2D" parent="Gravity Areas"]
-position = Vector2(571, 532)
+position = Vector2(732, 532)
 gravity_space_override = 3
 gravity_point_center = Vector2(0, -1)
 gravity_direction = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Area2D"]
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="Area2D2" type="Area2D" parent="Gravity Areas"]
+position = Vector2(370, 534)
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Area2D2"]
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="Area2D3" type="Area2D" parent="Gravity Areas"]
+position = Vector2(3, 536)
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Area2D3"]
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="Area2D4" type="Area2D" parent="Gravity Areas"]
+position = Vector2(1098, 534)
+gravity_space_override = 3
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gravity Areas/Area2D4"]
 shape = SubResource("RectangleShape2D_lnu2h")
 
 [node name="Planet" type="StaticBody2D" parent="Gravity Areas"]
