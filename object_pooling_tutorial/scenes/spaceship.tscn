@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn06piwcejtpr"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_tx48i"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_m1yy1"]
+
+[node name="Spaceship" type="Node2D"]
+
+[node name="Triangle" type="MeshInstance2D" parent="."]
+position = Vector2(-4.26325e-14, -6)
+rotation = -3.14159
+scale = Vector2(90, 90)
+mesh = SubResource("PrismMesh_tx48i")
+
+[node name="Wings" type="MeshInstance2D" parent="."]
+position = Vector2(0, 22)
+scale = Vector2(135, 45)
+mesh = SubResource("PrismMesh_m1yy1")
+
+[node name="bulletSpawnLocation" type="Node2D" parent="."]

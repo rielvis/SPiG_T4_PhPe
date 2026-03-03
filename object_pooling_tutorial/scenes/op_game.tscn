@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2kwspb807v78"]
+
+[ext_resource type="Script" uid="uid://bhlotkk61ixps" path="res://object_pooling_tutorial/scripts/op_game.gd" id="1_it72d"]
+[ext_resource type="PackedScene" uid="uid://dn06piwcejtpr" path="res://object_pooling_tutorial/scenes/spaceship.tscn" id="1_l0bov"]
+
+[node name="OPGame" type="Node2D"]
+script = ExtResource("1_it72d")
+
+[node name="Spaceship" parent="." instance=ExtResource("1_l0bov")]
+position = Vector2(616, 619)
