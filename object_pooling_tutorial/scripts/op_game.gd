@@ -27,7 +27,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_released("click"):
 		is_firing = false
 		
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if is_firing == true:
 		#spawn_bullets()
 		spawn_bullets_pooled()
