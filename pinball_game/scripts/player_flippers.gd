@@ -16,7 +16,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func _physics_process(delta: float) -> void:
-	var flipperRotationSpeed : float = 1000.00 * delta
+	var flipperRotationSpeed : float = 750.00 * delta
 	
 	# Left flipper flipping
 	if leftFlipperFlipped == true:
