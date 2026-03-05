@@ -1,16 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1gcxj5b4jklj"]
+[gd_scene load_steps=3 format=3 uid="uid://c1gcxj5b4jklj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_5w4xp"]
 size = Vector3(100, 10, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4xp"]
+size = Vector2(100.21, 10.6603)
+
 [node name="playerFlippers" type="Node2D"]
 
-[node name="leftFlipper" type="Node2D" parent="."]
+[node name="leftFlipper" type="StaticBody2D" parent="."]
+position = Vector2(-70, 0)
+rotation = 0.523599
 
 [node name="leftFlipMesh" type="MeshInstance2D" parent="leftFlipper"]
 mesh = SubResource("BoxMesh_5w4xp")
 
-[node name="rightFlipper" type="Node2D" parent="."]
+[node name="leftFlipCollider" type="CollisionShape2D" parent="leftFlipper"]
+shape = SubResource("RectangleShape2D_5w4xp")
+
+[node name="rightFlipper" type="StaticBody2D" parent="."]
+position = Vector2(70, 0)
+rotation = -0.523599
 
 [node name="rightFlipMesh" type="MeshInstance2D" parent="rightFlipper"]
 mesh = SubResource("BoxMesh_5w4xp")
+
+[node name="rightFlipCollider" type="CollisionShape2D" parent="rightFlipper"]
+shape = SubResource("RectangleShape2D_5w4xp")
