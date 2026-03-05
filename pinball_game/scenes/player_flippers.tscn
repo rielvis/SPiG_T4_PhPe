@@ -1,12 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1gcxj5b4jklj"]
+[gd_scene load_steps=6 format=3 uid="uid://c1gcxj5b4jklj"]
 
 [ext_resource type="Script" uid="uid://b6i4ccm17f8cu" path="res://pinball_game/scripts/player_flippers.gd" id="1_k6ovw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_k6ovw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_5w4xp"]
 size = Vector3(100, 10, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5w4xp"]
 size = Vector2(100.21, 10.6603)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_o1ju4"]
 
 [node name="playerFlippers" type="Node2D"]
 script = ExtResource("1_k6ovw")
@@ -15,6 +19,9 @@ script = ExtResource("1_k6ovw")
 unique_name_in_owner = true
 position = Vector2(-110, 0)
 rotation = 0.349066
+physics_material_override = SubResource("PhysicsMaterial_k6ovw")
+constant_linear_velocity = Vector2(-2, -2)
+constant_angular_velocity = -0.0349066
 
 [node name="leftFlipMesh" type="MeshInstance2D" parent="leftFlipper"]
 position = Vector2(50, 0)
@@ -28,6 +35,9 @@ shape = SubResource("RectangleShape2D_5w4xp")
 unique_name_in_owner = true
 position = Vector2(110, 0)
 rotation = -0.349066
+physics_material_override = SubResource("PhysicsMaterial_o1ju4")
+constant_linear_velocity = Vector2(-2, -2)
+constant_angular_velocity = -0.0349066
 
 [node name="rightFlipMesh" type="MeshInstance2D" parent="rightFlipper"]
 position = Vector2(-50, 0)
