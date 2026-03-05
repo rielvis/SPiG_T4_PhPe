@@ -16,11 +16,15 @@ func _unhandled_input(event: InputEvent) -> void:
 	# Checking for left flipper player input
 	if event.is_action_pressed("A") || event.is_action_pressed("leftArrow"):
 		leftFlipperFlipped = true
+		print("lF true")
 	elif event.is_action_released("A") || event.is_action_released("leftArrow"):
 		leftFlipperFlipped = false
+		print("lF false")
 	
 	# Checking for right flipper player input
 	if event.is_action_pressed("D") || event.is_action_pressed("rightArrow"):
 		leftFlipperFlipped = true
+		print("rF true")
 	elif event.is_action_released("D") || event.is_action_released("rightArrow"):
 		leftFlipperFlipped = false
+		print("rF false")
