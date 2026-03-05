@@ -17,7 +17,6 @@ func _ready() -> void:
 		add_child(b)
 		bullet_pool.append(b)
 		b.reset_bullet()
-		
 	pass
 
 func _unhandled_input(event: InputEvent) -> void:
