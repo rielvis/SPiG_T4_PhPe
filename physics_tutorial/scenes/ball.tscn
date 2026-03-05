@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c88dbrqh7udi3"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_n1dj2"]
-bounce = 0.82
+bounce = 0.8
 
 [sub_resource type="SphereMesh" id="SphereMesh_n1dj2"]
 
