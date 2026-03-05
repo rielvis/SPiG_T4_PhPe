@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://celckm2eqoqkg"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_p4ntq"]
+bounce = 1.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_n1dj2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n1dj2"]
+radius = 25.0
+
+[node name="bumperBall" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_p4ntq")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(0, 2.23565e-06)
+scale = Vector2(50, 50)
+mesh = SubResource("SphereMesh_n1dj2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n1dj2")
