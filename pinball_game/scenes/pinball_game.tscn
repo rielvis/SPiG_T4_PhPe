@@ -9,13 +9,16 @@
 [node name="playerFlippers" parent="." instance=ExtResource("1_t1yek")]
 position = Vector2(640, 640)
 
-[node name="Walls" parent="." instance=ExtResource("2_2r3y4")]
+[node name="Ball" parent="." instance=ExtResource("3_7ds7p")]
+position = Vector2(377, 46)
+
+[node name="walls" type="Node2D" parent="."]
+
+[node name="Walls" parent="walls" instance=ExtResource("2_2r3y4")]
 position = Vector2(172, 277)
 rotation = 0.785397
 
-[node name="Walls2" parent="." instance=ExtResource("2_2r3y4")]
+[node name="Walls2" parent="walls" instance=ExtResource("2_2r3y4")]
 position = Vector2(1110, 277)
 rotation = -0.785398
-
-[node name="Ball" parent="." instance=ExtResource("3_7ds7p")]
-position = Vector2(377, 46)
+scale = Vector2(1, 1)
