@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://ogb288xn1pga"]
+[gd_scene load_steps=2 format=3 uid="uid://ogb288xn1pga"]
+
+[ext_resource type="PackedScene" uid="uid://c1gcxj5b4jklj" path="res://pinball_game/scenes/player_flippers.tscn" id="1_t1yek"]
 
 [node name="pinballGame" type="Node2D"]
+
+[node name="playerFlippers" parent="." instance=ExtResource("1_t1yek")]
