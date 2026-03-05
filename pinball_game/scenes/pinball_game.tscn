@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ogb288xn1pga"]
+[gd_scene load_steps=6 format=3 uid="uid://ogb288xn1pga"]
 
 [ext_resource type="PackedScene" uid="uid://c1gcxj5b4jklj" path="res://pinball_game/scenes/player_flippers.tscn" id="1_t1yek"]
 [ext_resource type="PackedScene" uid="uid://br2fgk0pxh6vm" path="res://pinball_game/scenes/walls.tscn" id="2_2r3y4"]
 [ext_resource type="PackedScene" uid="uid://c88dbrqh7udi3" path="res://physics_tutorial/scenes/ball.tscn" id="3_7ds7p"]
+[ext_resource type="PackedScene" uid="uid://b7bf5xngx4krm" path="res://pinball_game/scenes/bumper.tscn" id="4_svrf6"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_n1dj2"]
 bounce = 0.6
@@ -26,6 +27,19 @@ rotation = -0.785398
 position = Vector2(640, 5)
 scale = Vector2(1.5, 1.5)
 
-[node name="Ball" parent="." instance=ExtResource("3_7ds7p")]
+[node name="balls" type="Node2D" parent="."]
+
+[node name="Ball" parent="balls" instance=ExtResource("3_7ds7p")]
 position = Vector2(312, 85)
 physics_material_override = SubResource("PhysicsMaterial_n1dj2")
+
+[node name="bumpers" type="Node2D" parent="."]
+
+[node name="Bumper" parent="bumpers" instance=ExtResource("4_svrf6")]
+position = Vector2(640, 282)
+
+[node name="Bumper2" parent="bumpers" instance=ExtResource("4_svrf6")]
+position = Vector2(-7.62939e-06, 0)
+
+[node name="Bumper3" parent="bumpers" instance=ExtResource("4_svrf6")]
+position = Vector2(1279, -2)
