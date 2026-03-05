@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://c1gcxj5b4jklj"]
+[gd_scene load_steps=2 format=3 uid="uid://c1gcxj5b4jklj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5w4xp"]
+size = Vector3(100, 10, 1)
 
 [node name="playerFlippers" type="Node2D"]
+
+[node name="leftFlipper" type="Node2D" parent="."]
+
+[node name="leftFlipMesh" type="MeshInstance2D" parent="leftFlipper"]
+mesh = SubResource("BoxMesh_5w4xp")
+
+[node name="rightFlipper" type="Node2D" parent="."]
+
+[node name="rightFlipMesh" type="MeshInstance2D" parent="rightFlipper"]
+mesh = SubResource("BoxMesh_5w4xp")
