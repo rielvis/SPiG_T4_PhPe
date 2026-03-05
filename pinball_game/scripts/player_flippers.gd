@@ -15,8 +15,7 @@ var RFDownRotationDegrees : float = -20.00
 func _ready() -> void:
 	pass # Replace with function body.
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	var flipperRotationSpeed : float = 1000.00 * delta
 	
 	# Left flipper flipping
