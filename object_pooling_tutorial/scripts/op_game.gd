@@ -6,7 +6,7 @@ const BULLET = preload("res://object_pooling_tutorial/scenes/bullet.tscn")
 var is_firing : bool = false
 
 var bullet_count : int = 180
-var max_bullet_count : int = 15000
+var max_bullet_count : int = 10000
 var bullet_spread_angle : float = 5
 var bullet_pool : Array[Bullet]
 var bullet_index : int = 0
