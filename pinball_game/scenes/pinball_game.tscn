@@ -5,3 +5,4 @@
 [node name="pinballGame" type="Node2D"]
 
 [node name="playerFlippers" parent="." instance=ExtResource("1_t1yek")]
+position = Vector2(640, 640)
