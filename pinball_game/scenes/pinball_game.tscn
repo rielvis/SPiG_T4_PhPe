@@ -29,6 +29,87 @@ scale = Vector2(1.5, 1.5)
 [node name="Ball" parent="balls" instance=ExtResource("3_7ds7p")]
 position = Vector2(259, 125)
 
+[node name="Ball2" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(274, 198)
+
+[node name="Ball3" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(388, 125)
+
+[node name="Ball4" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(162, 81)
+
+[node name="Ball5" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(373, 282)
+
+[node name="Ball6" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(373, 213)
+
+[node name="Ball7" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(563, 96)
+
+[node name="Ball8" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(874, 96)
+
+[node name="Ball9" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(859, 213)
+
+[node name="Ball10" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(964, 198)
+
+[node name="Ball11" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(1004, 110)
+
+[node name="Ball12" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(1071, 183)
+
+[node name="Ball13" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(889, 361)
+
+[node name="Ball14" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(805, 376)
+
+[node name="Ball15" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(703, 492)
+
+[node name="Ball16" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(515, 423)
+
+[node name="Ball17" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(373, 391)
+
+[node name="Ball18" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(461, 267)
+
+[node name="Ball19" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(313, 267)
+
+[node name="Ball20" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(195, 157)
+
+[node name="Ball21" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(313, 81)
+
+[node name="Ball22" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(446, 157)
+
+[node name="Ball23" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(790, 140)
+
+[node name="Ball24" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(904, 142)
+
+[node name="Ball25" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(1122, 96)
+
+[node name="Ball26" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(979, 267)
+
+[node name="Ball27" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(844, 297)
+
+[node name="Ball28" parent="balls" instance=ExtResource("3_7ds7p")]
+position = Vector2(790, 477)
+
 [node name="bumpers" type="Node2D" parent="."]
 
 [node name="Bumper" parent="bumpers" instance=ExtResource("4_svrf6")]
