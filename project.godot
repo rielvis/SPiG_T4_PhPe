@@ -15,11 +15,6 @@ run/main_scene="uid://d2kwspb807v78"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[display]
-
-window/size/viewport_width=1280
-window/size/viewport_height=720
-
 [input]
 
 click={
