@@ -1,15 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7bf5xngx4krm"]
+[gd_scene load_steps=4 format=3 uid="uid://b7bf5xngx4krm"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_emn6p"]
-size = Vector3(100, 50, 1)
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_emn6p"]
+bounce = 10.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_clu3c"]
-size = Vector2(100, 50)
+[sub_resource type="SphereMesh" id="SphereMesh_emn6p"]
+radius = 25.0
+height = 50.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_clu3c"]
+radius = 25.02
 
 [node name="Bumper" type="RigidBody2D"]
+scale = Vector2(5, 5)
+physics_material_override = SubResource("PhysicsMaterial_emn6p")
+freeze = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-mesh = SubResource("BoxMesh_emn6p")
+mesh = SubResource("SphereMesh_emn6p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_clu3c")
+shape = SubResource("CircleShape2D_clu3c")
