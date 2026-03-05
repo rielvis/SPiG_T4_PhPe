@@ -11,7 +11,7 @@ size = Vector2(100.21, 10.6603)
 [node name="playerFlippers" type="Node2D"]
 script = ExtResource("1_k6ovw")
 
-[node name="leftFlipper" type="StaticBody2D" parent="."]
+[node name="leftFlipper" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(-110, 0)
 rotation = 0.349066
@@ -24,7 +24,7 @@ mesh = SubResource("BoxMesh_5w4xp")
 position = Vector2(50, 0)
 shape = SubResource("RectangleShape2D_5w4xp")
 
-[node name="rightFlipper" type="StaticBody2D" parent="."]
+[node name="rightFlipper" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(110, 0)
 rotation = -0.349066
