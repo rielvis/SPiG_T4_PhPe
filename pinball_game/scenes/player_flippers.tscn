@@ -12,6 +12,7 @@ size = Vector2(100.21, 10.6603)
 script = ExtResource("1_k6ovw")
 
 [node name="leftFlipper" type="StaticBody2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(-110, 0)
 rotation = 0.349066
 
@@ -24,6 +25,7 @@ position = Vector2(50, 0)
 shape = SubResource("RectangleShape2D_5w4xp")
 
 [node name="rightFlipper" type="StaticBody2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(110, 0)
 rotation = -0.349066
 
