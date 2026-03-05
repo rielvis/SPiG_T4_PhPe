@@ -30,8 +30,9 @@ scale = Vector2(1.5, 1.5)
 [node name="balls" type="Node2D" parent="."]
 
 [node name="Ball" parent="balls" instance=ExtResource("3_7ds7p")]
-position = Vector2(312, 85)
+position = Vector2(207, 93)
 physics_material_override = SubResource("PhysicsMaterial_n1dj2")
+script = null
 
 [node name="bumpers" type="Node2D" parent="."]
 
