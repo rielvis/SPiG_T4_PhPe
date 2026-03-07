@@ -17,7 +17,7 @@ script = ExtResource("1_k6ovw")
 
 [node name="leftFlipper" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(-110, 0)
+position = Vector2(-120, 0)
 rotation = 0.349066
 scale = Vector2(1, 2)
 physics_material_override = SubResource("PhysicsMaterial_k6ovw")
@@ -34,7 +34,7 @@ shape = SubResource("RectangleShape2D_5w4xp")
 
 [node name="rightFlipper" type="AnimatableBody2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(110, 0)
+position = Vector2(120, 0)
 rotation = -0.349066
 scale = Vector2(1, 2)
 physics_material_override = SubResource("PhysicsMaterial_o1ju4")
