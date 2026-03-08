@@ -6,7 +6,7 @@ const BULLET = preload("res://object_pooling_tutorial/scenes/bullet.tscn")
 var is_firing : bool = false
 
 var bullet_count : int = 180
-var max_bullet_count : int = 10000
+var max_bullet_count : int = 15000
 var bullet_spread_angle : float = 5
 var bullet_pool : Array[Bullet]
 var bullet_index : int = 0
@@ -20,10 +20,10 @@ func _ready() -> void:
 	pass
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("click"):
+	if event.is_action_pressed("click") || event.is_action_pressed("A"):
 		#spawn_bullets()
 		is_firing = true
-	elif event.is_action_released("click"):
+	elif event.is_action_released("click") || event.is_action_released("A"):
 		is_firing = false
 		
 func _physics_process(_delta: float) -> void:
