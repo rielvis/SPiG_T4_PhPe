@@ -2,6 +2,16 @@
 This is my 4th task (3rd piece) for Specialist Practice in Gaming at ARUP.
 This piece aims to demonstrate a strong understanding and application of game physics and performance.
 
+### Guide to Project Folders
+2D Physics Tutorial Work
+> res://physics_tutorial/
+
+Object Pooling Tutorial Work
+> res://object_pooling_tutorial/
+
+Original Pinball Game Work
+> res://pinball_game/
+
 ## Tutorial Process Explanation
 I followed two tutorials: a [Godot 2D physics tutorial](https://www.youtube.com/watch?v=TyXx3B1_lhA) and a [Godot object pooling tutorial](https://www.youtube.com/watch?v=lJRqKJQVjf4). 
 
@@ -12,14 +22,14 @@ The object pooling tutorial work aimed to explore a programming technique to sav
 ## Personal Learning Reflection
 The 2D physics tutorial made full sense to me, however I had some trouble with the object pooling tutorial. 
 
-Although I understand the design behind object pooling and how it helps optimise performance, I found it difficult to understand how the array variable was being used to implement this technique. Furthermore, despite following the steps shown in the tutorial, my game still lagged and occasionally crashed. I managed to resolve the crashing by lowering the maximum number of objects pooled, and although this work introduced me to for loops in my code which I am confident with now, I still do not fully understand how an array works. 
+Although I understand the design behind object pooling and how it helps optimise performance, I found it difficult to understand how the array variable was being used to implement this technique. Furthermore, despite following the steps shown in the tutorial, my game still lagged and occasionally crashed. Although this work introduced me to for loops in my code which I am confident with now, I still do not fully understand how an array works and my solution to this crashing was very rudimentary.
 
 This lack of understanding around arrays is a clear gap in my skills as a programmer. I am marginally aware of what an array is from a mathematical perspective, but it is far from a full understanding which is hindering my ability to put it into practice. 
 
 Moving forward, I need to seek resources to improve my mathematics relevant to programming. Afterwards, or alongside that improvement, I should seek some array tutorials that break down the concept more so I can better digest it. 
 
 ## Evidence and Explanation of Tutorial Iteration for Refinement or Correction
-...
+As previously stated, the object pooling
 
 ## Demonstration of Original Work
 ...
