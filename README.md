@@ -29,7 +29,7 @@ This lack of understanding around arrays is a clear gap in my skills as a progra
 Moving forward, I need to seek resources to improve my mathematics relevant to programming. Afterwards, or alongside that improvement, I should seek some array tutorials that break down the concept more so I can better digest it. 
 
 ## Evidence and Explanation of Tutorial Iteration for Refinement or Correction
-(No iteration was done on the tutorial work.)
+(See **Demonstration of Original Work**)
 
 ## Demonstration of Original Work
 Using the techniques I learned from the tutorial work here and in previous tasks, I created a small pinball style game. On top of making the flippers controlled by the player which used an AnimatableBody2D node (an extension of the StaticBody2D node with additional physics capabilities) I used the RigidBody2D balls made from the physics tutorial, though I created another ball object as the "bumpers". The bumpers are larger and have a bounce factor enabled, so that the smaller balls are "bumped" by them.
